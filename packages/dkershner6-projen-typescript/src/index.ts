@@ -197,7 +197,7 @@ export class EslintConfig extends Component {
         project.eslint?.addRules({
             "no-console": [
                 "warn",
-                { allow: ["debug", "info", "warn", "error"] },
+                { allow: ["debug", "info", "warn", "error", "time", "timeEnd"] },
             ],
             "import/no-unresolved": "off", // Handled by TS and it gets confused on @types packages.
             "import/namespace": "off",
